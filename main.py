@@ -1,6 +1,10 @@
-#import libraries
-import cv2
-import numpy as np
+#Sources:
+#Hough Line Transform Tutorial - https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html
+#Masking - https://stackoverflow.com/questions/11492214/opencv-via-python-is-there-a-fast-way-to-zero-pixels-outside-a-set-of-rectangle
+#Hough Line Transform Tutorial - used for lines 6-10 of filter.py and line 6 of olines.py
+#Masking - used for lines 12-16 in filter.py
+
+
 #import files and functions/methods
 from filter import * #does all the filtering and masking
 from olines import * #does the line detecting and overlay, including middle line

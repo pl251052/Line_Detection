@@ -1,8 +1,9 @@
+#import libraries
 import cv2
 import numpy as np
-def detect_lines(masked_edges):
+def detect_lines(masked):
     # Detects lines using Hough Transform
-    return cv2.HoughLinesP(masked_edges, rho=1, theta=np.pi / 180, threshold=100, minLineLength=50, maxLineGap=720)
+    return cv2.HoughLinesP(masked, rho=1, theta=np.pi / 180, threshold=100, minLineLength=50, maxLineGap=720)
 
 def draw_lines(img, lines):
     liney = [] #will hold the values of the detected lines
